@@ -1,0 +1,109 @@
+* {
+    font-family: 'Racing Sans One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 2px solid black;
+    outline: #FFE2B7 solid 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+section .saveBtn {
+    text-decoration: none;
+    color: white;
+    background-color: #008000;
+    text-align: center;
+    display: inline-flex;
+    font-size: 18px;
+}
+
+section .resetBtn {
+    text-decoration: none;
+    color: white;
+    background-color: #FF0000;
+    text-align: center;
+    display: inline-flex;
+    font-size: 18px;
+}
+
+.mySideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .mySideNav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .mySideNav a:hover {
+            color: #f1f1f1;
+        }
+
+    .mySideNav .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+section {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 768px) {
+    .mySideNav {
+        padding-top: 15px;
+    }
+
+        .mySideNav a {
+            font-size: 18px;
+        }
+
+    .cadastraContaBlock {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+img {
+    border: 2px solid #555;
+    max-width: 100%;
+    height: 120px;
+    width: 50%;
+}
+
+.botoes {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario_cadastrarConta {
+    width: 32%;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>My Contact Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="contactsytle.css">
+
+</head>
+<body>
+
+    <div class="mySideNav" id="sideNav">
+
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">
+            &times;
+        </a>
+
+        <a href="http://localhost/bankingsite/about.html">About</a>
+        <a href="http://localhost/bankingsite/consultas.php">Consulta de Clientes</a>
+        <a href="http://localhost/bankingsite/cadastros.php">Cadastro de Clientes</a>
+        <a href="http://localhost/bankingsite/cadastrarConta.html">Cadastros de Conta</a>
+        <a href="http://localhost/bankingsite/consultaConta.html">Consulta de Conta</a>
+        <a href="#">Contactos</a>
+
+
+    </div>
+
+    <span style="font-size:30px; cursor:pointer" onclick="openNav()">
+
+        &#9776;Menu
+
+    </span>
+    <section class="contact" id="contact">
+        <header class="main">
+            <h1>Contact Me</h1>
+        </header>
+        <section class="main">
+
+            <form method="post" action="http://localhost/bankingsite/index.php">
+                <label>Your Name:</label>
+
+                <input name="name" placeholder="Write your name">
+
+                <label>Your Email:</label>
+
+                <input name="email" type="email" placeholder="Write your email">
+
+                <label>Your Message:</label>
+
+                <textarea name="message" placeholder="Tell me"></textarea>
+
+                <input id="submit" class="submit" type="submit" value="Send">
+            </form>
+        </section>
+    </section>
+
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+            document.getElementById("contact").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            document.getElementById("contact").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+</html>

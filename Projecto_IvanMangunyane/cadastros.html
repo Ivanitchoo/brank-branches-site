@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>
+        Proj - Ivan Mangunyane I32
+    </title>
+    <link rel="stylesheet" href="cadastros_styles.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <script src=" "></script>
+</head>
+<body >
+
+    <div class="container">
+
+        <div class="mySideNav" id="sideNav">
+
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">
+                &times;
+            </a>
+
+            <a href="#">About</a>
+            <a href="http://localhost/bankingsite/consultas.php">Consulta de Clientes</a>
+            <a href="#">Cadastro de Clientes</a>
+            <a href="http://localhost/bankingsite/cadastrarConta.html">Cadastros de Conta</a>
+            <a href="http://localhost/bankingsite/consultaConta.html">Consulta de Conta</a>
+            <a href="#">Contactos</a>
+
+
+        </div>
+
+        <span style="font-size:30px; cursor:pointer" onclick="openNav()">
+
+            &#9776;Menu
+
+        </span>
+
+        <section id ="cadastroBlock" class="cadastroBlock">
+
+            <h1 style="text-align:center"> Cadastro de Clientes</h1>
+            <hr /><br /><br />
+
+                        <form class="formulario_registo" method="post" action="processaCliente.php">
+
+                            <!--img src="img/register.png"/>-->
+                            <br /><br />
+
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nomeCliente" class="nomeCliente" maxlength="50" placeholder="Ex:. Kendrick Lamar" />
+                            <br /><br />
+                            
+                            <label for="rua">Rua:</label>
+                            <input type="text" name="ruaCliente" class="ruaCliente" maxlength="50" placeholder="Ex:. Palm Street" />
+                            <br /><br />
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" name="cidadeCliente" class="cidadeCliente" maxlength="50" placeholder="Ex:. Seattle" />
+                            <br /><br />
+
+                            <div class="botoes">
+
+                                <input type="submit" value="Gravar" class="saveBtn" />
+                                <input type="reset" value="Limpar" class="resetBtn" />
+
+                            </div>
+                            <br /><br />
+                            <p >&copy;Ivan Albano 2021</p>
+
+
+                        </form>
+
+        </section>
+
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+            document.getElementById("cadastroBlock").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            document.getElementById("cadastroBlock").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+</body>
+</html>

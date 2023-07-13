@@ -1,0 +1,105 @@
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Proj - Ivan Mangunyane I32</title>
+
+    <link rel="stylesheet" href="cadastrarConta_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="containerCadastrarConta">
+
+        <div class="mySideNav" id="sideNav">
+
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">
+                &times;
+            </a>
+
+            <a href="#">About</a>
+            <a href="http://localhost/bankingsite/consultas.php">Consulta de Clientes</a>
+            <a href="http://localhost/bankingsite/cadastros.html">Cadastro de Clientes</a>
+            <a href="#">Cadastros de Conta</a>
+            <a href="http://localhost/bankingsite/consultaConta.html">Consulta de Contas</a>
+            <a href="#">Contactos</a>
+
+
+        </div>
+
+        <span style="font-size:30px; cursor:pointer" onclick="openNav()">
+
+            &#9776;Menu
+
+        </span>
+
+        <section id="cadastraContaBlock" class="cadastraContaBlock">
+
+            <h1 style="text-align:center"> Cadastro de Contas </h1>
+            <hr /><br /><br />
+
+            <form class="formulario_cadastrarConta" method="post" action=" processaConta.php">
+
+                <!--img src="img/register.png"/>-->
+                <br /><br />
+
+                <label for="id">ID:</label>
+                <input type="text" name="ID_conta" class="ID_conta" maxlength="50" placeholder="Ex:. A-101" />
+                <br /><br />
+
+                <label for="cliente">Depositante:</label>
+                <input type="text" name="titular_conta" class="titular_conta" maxlength="50" placeholder="Ex:. Kendrick LAmar" />
+                <br /><br />
+
+                <label for="agencia">Agência:</label>
+                <input type="text" name="agencia_conta" class="agencia_conta" maxlength="50" placeholder="Ex:.Central" />
+                <br /><br />
+
+                <label for="saldo">Saldo Inicial:</label>
+                <input type="text" name="saldo_conta" class="saldo_conta" maxlength="50" placeholder="Ex:. 2300" />
+                <br /><br />
+
+                <div class="botoes">
+
+                    <input type="submit" value="Gravar" class="saveBtn" />
+                    <input type="reset" value="Limpar" class="resetBtn" />
+
+                </div>
+                <br /><br />
+                <p>&copy;Ivan Albano 2021</p>
+
+
+            </form>
+
+        </section>
+
+
+    </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("sideNav").style.width = "250px";
+                document.getElementById("cadastraContaBlock").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+            function closeNav() {
+                document.getElementById("sideNav").style.width = "0";
+                document.getElementById("cadastraContaBlock").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
+
+    
+
+
+</body>
+
+
+
+</html>

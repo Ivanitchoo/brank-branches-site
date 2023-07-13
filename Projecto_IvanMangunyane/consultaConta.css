@@ -1,0 +1,109 @@
+* {
+    font-family: 'Racing Sans One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mySideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .mySideNav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .mySideNav a:hover {
+            color: #f1f1f1;
+        }
+
+    .mySideNav .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+section {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 768px) {
+    .mySideNav {
+        padding-top: 15px;
+    }
+
+        .mySideNav a {
+            font-size: 18px;
+        }
+
+    .consultaContaBlock {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .topnav .search-container {
+        float: none;
+    }
+
+        .topnav input[type=text], .topnav .search-container input[type=submit] {
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 14px;
+        }
+
+        .topnav .search-container input[type=text] {
+            border: 1px solid #ccc;
+        }
+}
+
+h1 {
+    border: 2px solid black;
+    outline: #B8860B solid 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+    .topnav .search-container button:hover {
+        background: #ccc;
+    }

@@ -1,0 +1,92 @@
+
+<html>
+<head>
+    
+    <title>About</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="about.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--menu-->
+    <div class="mySideNav" id="sideNav">
+
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">
+            &times;
+        </a>
+
+        <a href="#">About</a>
+        <a href="http://localhost/bankingsite/consultas.php">Consulta de Clientes</a>
+        <a href="http://localhost/bankingsite/cadastros.html">Cadastro de Clientes</a>
+        <a href="http://localhost/bankingsite/cadastrarConta.html">Cadastros de Conta</a>
+        <a href="http://localhost/bankingsite/consultaConta.php">Consulta de Conta</a>
+        <a href="http://localhost/bankingsite/contact.html">Contactos</a>
+
+
+    </div>
+
+
+    <span style="font-size:30px; cursor:pointer" onclick="openNav()">
+
+        &#9776;Menu
+
+    </span>
+
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+            document.getElementById("aboutblock").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+
+        }
+
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            document.getElementById("aboutblock").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+
+    </script>
+
+    <!--corpo-->
+    <section id="aboutblock" class="aboutblock">
+        <div class="about-section">
+            <h1>About Us </h1>
+            <p>
+                Este é um projecto da cadeira de Aplicações e
+                Serviços de Internet.
+            </p>
+
+        </div>
+
+        <h2 style="text-align:center">Our Team</h2>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="img/IMG-20210619-WA0139.jpg" alt="Ivan" style="width:100%">
+                    <div class="container">
+                        <h2>Ivan Mangunyane</h2>
+                        <p class="title">Art Director, Designer, CEO & Founder</p>
+                        <p>
+                            Sou um estudante de Engenharia Informática e Telecomunicações no Isutc.
+                            Tenho 21 anos e estou no terceiro ano.
+                        </p>
+                        <p>ivan.albano@isutc.ac.mz</p>
+                        <p><a href="contact.html" class="button">Contact</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

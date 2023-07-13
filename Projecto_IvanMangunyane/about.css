@@ -1,0 +1,128 @@
+
+* {
+    font-family: 'Racing Sans One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    float:inherit;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+p{
+    
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    background: url('img/cba3a3ec105ca8805d41139b74396b3a.jpg');
+}
+
+.container {
+    padding: 0 16px;
+}
+
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .button:hover {
+        background-color: #555;
+    }
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .mySideNav {
+        padding-top: 15px;
+    }
+
+        .mySideNav a {
+            font-size: 18px;
+        }
+
+    .aboutblock {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    
+}
+
+.mySideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .mySideNav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .mySideNav a:hover {
+            color: #f1f1f1;
+        }
+
+    .mySideNav .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+section {
+    transition: margin-left .5s;
+    padding: 16px;
+}
